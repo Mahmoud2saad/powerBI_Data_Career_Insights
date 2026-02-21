@@ -1,56 +1,162 @@
-# Data Jobs Dashboard w/ Power BI
+# Data Jobs Analytics w/ Power BI 📊
 
-![data_dashboard](screenshots/Project1_Dashboard_Overview.gif)
-
-
-## Introduction
-
-This dashboard was created for **Job Seekers, Job Transitioners, and Job Swappers** to solve a common problem: information about the data job market is scattered and hard to grasp. Using a real-world dataset of 2024 data science job postings (including titles, salaries, and locations), this project provides a single, easy-to-use interface to explore market trends and compensation.
-
-### Dashboard File
-You can find the file for the dashboard here: [`Data_Jobs_Dashboard.pbix`](data_jobs_dashboard.pbix).
+![GitHub repo size](https://img.shields.io/badge/repo%20size-131MB-blue)
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)
+![Status](https://img.shields.io/badge/status-complete-success)
 
 
-### Setup Instructions:
-1. Download the data from the link above
-2. Extract to `data/` folder
-3. Open the `.pbix` file in Power BI
 
-## Skills Showcased
+## 🎯 Project Overview
 
-This project was a journey through key Power BI features. Here's a look at what we mastered:
+This repository contains **two comprehensive Power BI projects** analyzing the 2024 data science job market. Both dashboards are designed to help **Job Seekers, Job Transitioners, and Job Swappers** navigate the complex landscape of data careers by providing actionable insights on job trends, salaries, required skills, and market demands.
 
--   **⚙️ Data Transformation (ETL) with Power Query:** Cleaned, shaped, and prepared the raw data for analysis by handling blanks, changing data types, and creating new columns.
--   **🧮 Implicit Measures:** Formulated measures to derive key insights and KPIs like `Median Yearly Salary` and `Job Count`.
--   **📊 Core Charts:** Utilized **Column, Bar, Line,** and **Area Charts** to compare job counts and track trends over time.
--   **🗺️ Geospatial Analysis:** Leveraged **Map Charts** to visualize the global distribution of jobs.
--   **🔢 KPI Indicators & Tables:** Used **Cards** to display key metrics and **Tables** to provide granular, sortable data.
--   **🎨 Dashboard Design:** Designed an intuitive and visually appealing layout, exploring both common and uncommon chart types to best tell the data story.
--   **🖱️ Interactive Reporting:**
-    -   **Slicers:** To dynamically filter the report by Job Title.
-    -   **Buttons & Bookmarks:** To create a seamless navigation experience.
-    -   **Drill-Through:** To navigate from a high-level summary to a contextual, detailed view.
----
-
-## Dashboard Overview
-
-*This report is split into two distinct pages to provide both a high-level summary and a detailed analysis.*
-
-### Page 1: High-Level Market View
-
-![Data Jobs Dashboard Page 1](screenshots/Project1_Dashboard_Page1.gif)  
-
-This is your mission control for the data job market. It showcases key KPIs like total job count, median salaries, and top job titles to give you a quick understanding of what's happening in the job market at a glance.
-
-### Page 2: Job Title Drill Through
-
-![Data Jobs Dashboard Page 2](screenshots/Project1_Dashboard_Page2.gif)  
-
-This is the deep-dive page. From the main dashboard, you can drill through to this view to get specific details for a single job title, including salary ranges, work-from-home stats, top hiring platforms, and a global map of job locations.
+Using a real-world dataset of data science job postings rich with information on titles, salaries, locations, and skills, these projects demonstrate advanced Power BI capabilities while solving a practical problem: making sense of scattered job market information.
 
 ---
+## 📥 Dataset Information
 
-## Conclusion
+Each project includes **sample data** (1,000 rows) in the `Data/` folder to get you started immediately. The dashboards are ready to use right out of the box!
 
-This dashboard showcases how Power BI can transform raw job posting data into a powerful tool for career analysis. It allows users to slice, filter, and drill through data to make informed decisions about their career paths.
+**Optional - Full Dataset:** For complete analysis with all job postings, you can download the full dataset (136.3MB):  
+[Download Full Data Files](https://drive.google.com/file/d/1xiNSeNRKiuTrCDmJbDo3ukom47HaBeQj/view?usp=drive_link)
 
+### Quick Start:
+1. Open the `.pbix` file in Power BI Desktop
+2. The sample data will load automatically
+3. Start exploring and filtering based on your interests
+
+### Using Full Dataset (Optional):
+1. Download the full data from the link above
+2. Replace `sample_data.csv` in the `Data/` folder with `job_postings_flat.csv`
+3. Refresh the data in Power BI
+
+---
+## 📂 Repository Structure
+
+```
+├── Data-Careers-Insights/          # Project 2 (V2.0) - Single Page Dashboard
+│   ├── Data/
+│   │   └── sample_data.csv
+│   ├── README.md
+│   ├── data_jobs_dashboard.pbix
+│   └── screenshots/
+│       ├── Project2_Dashboard_Overview.gif
+│       └── Project2_Dashboard_Page1.png
+│
+├── README.md                        # Main documentation (you are here)
+│
+└── data-jobs-analysis/             # Project 1 (V1.0) - Multi-Page Dashboard
+    ├── Data/
+    │   └── sample_data.csv
+    ├── Data_Careers_Insights_Dashboard.pbix
+    ├── README.md
+    └── screenshots/
+        ├── Project1_Dashboard_Overview.gif
+        ├── Project1_Dashboard_Page1.gif
+        └── Project1_Dashboard_Page2.gif
+```
+
+---
+
+## 🚀 Projects Breakdown
+
+### Project 1: Data Jobs Dashboard (Multi-Page Analysis)
+**Location:** `data-jobs-analysis/`
+
+A comprehensive two-page dashboard offering both high-level overview and detailed drill-through capabilities.
+
+**Key Features:**
+- **Page 1:** High-level market overview with KPIs, top job titles, and salary trends
+- **Page 2:** Drill-through functionality for job-specific insights including salary ranges, work-from-home statistics, and global job distribution
+- Interactive filtering and navigation using slicers, buttons, and bookmarks
+- Geospatial analysis with map visualizations
+
+**Best For:** Users who want deep-dive analysis and detailed exploration of specific job titles.
+
+[View Project 1 Details →](data-jobs-analysis/README.md)
+
+---
+
+### Project 2: Data Careers Insights Dashboard (Single Page Focus)
+**Location:** `Data-Careers-Insights/`
+
+A streamlined, single-page dashboard designed for quick insights and efficient decision-making.
+
+**Key Features:**
+- Consolidated view with all critical metrics on one page
+- Real-time KPIs: Job Count, Skills Per Job, Median Salaries (Yearly & Hourly)
+- Skill Popularity analysis by job percentage or count
+- Job Salary comparisons across different titles
+- Clean, focused interface for rapid market assessment
+
+**Best For:** Users who need quick market insights and efficient overview without navigation overhead.
+
+[View Project 2 Details →](Data-Careers-Insights/README.md)
+
+---
+
+## 💡 Skills Demonstrated
+
+Both projects showcase advanced Power BI capabilities:
+
+### Data Preparation & Modeling
+- **Power Query ETL:** Data cleaning, transformation, and shaping
+- **Data Modeling:** Efficient data models following Star Schema principles
+- **DAX (Data Analysis Expressions):** Custom calculations and measures
+
+### Visualization Techniques
+- **Core Charts:** Column, Bar, Line, and Area charts
+- **Geospatial Analysis:** Map visualizations for location-based insights
+- **KPI Cards:** Highlighting critical metrics
+- **Tables:** Detailed, sortable data presentation
+
+### Interactive Features
+- **Dynamic Slicers:** User-driven data filtering
+- **Buttons & Bookmarks:** Seamless navigation and view management
+- **Drill-Through:** Contextual detailed views from summary pages
+- **Dashboard Design:** Intuitive, visually appealing layouts
+
+---
+
+## 🎓 Target Audience
+
+These dashboards are specifically designed for:
+
+- **Job Seekers** entering the data field
+- **Career Transitioners** moving into data roles
+- **Job Swappers** exploring opportunities within the data industry
+- **Recruiters & HR Professionals** understanding market trends
+- **Data Professionals** negotiating salaries and understanding skill demands
+
+---
+
+## 📊 Dataset Details
+
+**Source:** 2024 Data Science Job Postings  
+**Format:** CSV (sample_data.csv)  
+**Sample Size:** 1,000 rows (included in repository)   
+**Full Size:** 478897 rows (Link provided)   
+**Full Dataset:** 136.3MB available for download (optional)  
+**Contains:** Job titles, salaries, locations, required skills, company information, and more
+
+---
+
+## 🌟 Key Insights You'll Discover
+
+- **Salary Benchmarks:** Median yearly and hourly compensation across roles
+- **In-Demand Skills:** Most requested technical skills in the market
+- **Job Distribution:** Geographic spread of opportunities
+- **Market Trends:** Role popularity and emerging positions
+- **Skills Per Job:** Technical depth required for different positions
+
+---
+
+## 📈 Getting Started
+
+1. **Clone or download** this repository
+2. **Choose your dashboard:**
+3. **Open the `.pbix` file** in Power BI Desktop
+4. Sample data loads automatically - start exploring!
+5. **(Optional)** Download and use full dataset for complete analysis
+
+---
